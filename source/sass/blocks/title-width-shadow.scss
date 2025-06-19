@@ -1,0 +1,47 @@
+.title-with-shadow {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 17px 0 14px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+
+  @media #{$tablet-width} {
+    padding: 20px 0 10px;
+    font-size: 25px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 23px 0 15px;
+    font-size: 35px;
+  }
+}
+
+.title-with-shadow::before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  margin: 0;
+  width: calc(26px / 22px * 100%);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1;
+  color: $text-basic;
+  opacity: 0.03;
+  content: attr(data-shadow);
+
+  @media #{$tablet-width} {
+    top: 10px;
+    width: calc(40px / 25px * 100%);
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  @media #{$desktop-width} {
+    top: 14px;
+    width: calc(55px / 35px * 100%);
+    font-size: 55px;
+    line-height: 40px;
+  }
+}

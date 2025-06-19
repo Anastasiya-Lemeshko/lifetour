@@ -1,0 +1,158 @@
+.tours {
+  padding: 20px $mobile-side;
+
+  @media #{$tablet-width} {
+    padding: 40px $tablet-side;
+  }
+
+  @media #{$desktop-width} {
+    padding: 100px $desktop-side;
+  }
+}
+
+.tours__title {
+  margin: 0 0 25px;
+
+  @media #{$mobile-only} {
+    padding: 19px 0 14px;
+  }
+
+  @media #{$tablet-width} {
+    width: calc(100% - 90px);
+  }
+
+  @media #{$desktop-width} {
+    margin: 0 0 35px;
+  }
+}
+
+.tours__swiper-wrapper {
+  position: relative;
+  margin: 0 auto 25px;
+
+  @media #{$desktop-width} {
+    margin: 0 auto 53px;
+  }
+}
+
+.tours__swiper {
+  position: static;
+}
+
+.tours__swiper-container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tours__slide {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.tours__slide-container {
+  flex-grow: 1;
+}
+
+.tours__button {
+  display: none;
+
+  @media #{$tablet-width} {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    display: inline-block;
+  }
+
+  @media #{$desktop-width} {
+    top: -88px;
+  }
+}
+
+.tours__button--prev {
+  right: 41px;
+}
+
+.tours__button--next {
+  transform: rotate(180deg);
+}
+
+.tours__link {
+  --icon-color: #{$text-basic};
+
+  display: grid;
+  grid-template-columns: 1fr 16px;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 9px 10px 10px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-basic;
+  text-decoration: none;
+  transition: color 0.3s, opacity 0.3s;
+
+  @media #{$tablet-width} {
+    padding: 11px 10px 10px 15px;
+    font-size: 16px;
+  }
+
+  &:focus-visible {
+    --icon-color: #{$bg-primary};
+
+    outline: none;
+    color: $bg-primary;
+  }
+
+  &:hover {
+    --icon-color: #{$bg-primary};
+
+    color: $bg-primary;
+    opacity: 0.1;
+  }
+
+  &:active {
+    --icon-color: #{$button-active};
+
+    color: $button-active;
+    opacity: 1;
+  }
+}
+
+.tours__link--disabled {
+  --icon-color: #{$button-disabled};
+
+  color: $button-disabled;
+  opacity: 1;
+  pointer-events: none;
+  cursor: default;
+
+  &:focus-visible,
+  &:hover,
+  &:active {
+    --icon-color: #{$button-disabled};
+
+    outline: none;
+    color: $button-disabled;
+    opacity: 1;
+  }
+}
+
+.tours__link::after {
+  grid-area: 1 / 2 / 2 / 3;
+  content: "";
+  width: 16px;
+  height: 16px;
+  mask-image: url("/__spritemap#sprite-link-arrow-view");
+  mask-repeat: no-repeat;
+  mask-size: 16px 16px;
+  mask-position: center;
+  background-color: var(--icon-color);
+  transition: background-color 0.3s;
+}

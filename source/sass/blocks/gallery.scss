@@ -1,0 +1,170 @@
+.gallery {
+  box-sizing: border-box;
+  padding: 20px 0 3px;
+
+  @media #{$tablet-width} {
+    padding: 40px 0 3px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 100px 0 3px;
+  }
+}
+
+.gallery__title {
+  margin: 0 $mobile-side 12px;
+
+  @media #{$tablet-width} {
+    margin: 0 $tablet-side 20px;
+  }
+
+  @media #{$desktop-width} {
+    margin: 0 $desktop-side 10px;
+    padding: 23px 0 14px;
+  }
+}
+
+.gallery__wysiwyg {
+  max-width: 420px;
+  margin: 0 $mobile-side 31px;
+
+  @media #{$tablet-width} {
+    margin: 0 $tablet-side 21px;
+  }
+
+  @media #{$desktop-width} {
+    max-width: 645px;
+    margin: 0 $desktop-side 45px;
+  }
+}
+
+.gallery__wysiwyg p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media #{$tablet-width} {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.gallery__wysiwyg p + p {
+  margin-top: 10px;
+}
+
+.gallery__swiper-wrapper {
+  position: relative;
+}
+
+.gallery__swiper {
+  position: static;
+}
+
+.gallery__swiper-container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media #{$desktop-width} {
+    overflow: hidden;
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.gallery__slide {
+  width: auto;
+  height: auto;
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @media #{$desktop-width} {
+    gap: 7px;
+  }
+}
+
+.gallery__image-wrapper {
+  background-color: $image-plug;
+}
+
+.gallery__image-wrapper--big {
+  width: 158px;
+  height: 266px;
+
+  @media #{$tablet-width} {
+    width: 253px;
+    height: 418px;
+  }
+
+  @media #{$desktop-width} {
+    width: 284px;
+    height: 463px;
+  }
+}
+
+.gallery__image-wrapper--top {
+  width: 157px;
+  height: 135px;
+
+  @media #{$tablet-width} {
+    width: 252px;
+    height: 210px;
+  }
+
+  @media #{$desktop-width} {
+    width: 284px;
+    height: 233px;
+  }
+}
+
+.gallery__image-wrapper--bottom {
+  width: 157px;
+  height: 125px;
+
+  @media #{$tablet-width} {
+    width: 252px;
+    height: 202px;
+  }
+
+  @media #{$desktop-width} {
+    width: 284px;
+    height: 223px;
+  }
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__button {
+  display: none;
+
+  @media #{$tablet-only} {
+    display: inline-block;
+    position: absolute;
+    top: -56px;
+    right: 45px;
+  }
+}
+
+.gallery__button--prev {
+  right: 86px;
+}
+
+.gallery__button--next {
+  transform: rotate(180deg);
+}

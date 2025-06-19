@@ -1,0 +1,70 @@
+.training {
+  padding: 16px $mobile-side 21px;
+  color: $text-basic;
+
+  @media #{$tablet-width} {
+    padding: 39px $tablet-side 43px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 39px $desktop-side 41px;
+  }
+}
+
+.training__title {
+  margin: 0 0 19px;
+
+  @media #{$mobile-only} {
+    padding: 20px 0 14px;
+  }
+
+  @media #{$tablet-width} {
+    margin: 0 0 24px;
+  }
+
+  @media #{$desktop-width} {
+    margin: 0 0 17px;
+  }
+}
+
+.training__wysiwyg {
+  margin-bottom: 29px;
+
+  @media #{$tablet-width} {
+    max-width: 750px;
+    margin-bottom: 30px;
+  }
+
+  @media #{$desktop-width} {
+    max-width: 870px;
+    margin-bottom: 62px;
+  }
+}
+
+.training__wysiwyg p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media #{$tablet-width} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.training__wysiwyg p + p {
+  margin-top: 10px;
+}
+
+.training__instructors {
+  margin-bottom: 26px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 27px;
+  }
+
+  @media #{$desktop-width} {
+    margin-bottom: 58px;
+  }
+}

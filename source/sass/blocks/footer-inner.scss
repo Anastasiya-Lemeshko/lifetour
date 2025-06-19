@@ -1,0 +1,147 @@
+.footer-inner {
+  border-top: 1px solid rgba(45, 56, 63, 0.2);
+}
+
+.footer-inner__wrapper {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 19px;
+  padding: 23px $mobile-side 20px;
+
+  @media #{$tablet-width} {
+    grid-template-columns: repeat(2, auto);
+    gap: 34px 15px;
+    padding: 34px $tablet-side 20px;
+  }
+
+  @media #{$desktop-width} {
+    grid-template-columns: 200px 1fr 200px;
+    gap: 22px 15px;
+    padding: 40px $desktop-side 32px;
+  }
+}
+
+.footer-inner__logo-wrapper {
+  @media #{$tablet-only} {
+    justify-self: start;
+  }
+}
+
+.footer-inner__navigation {
+  @media #{$tablet-only} {
+    justify-self: end;
+  }
+}
+
+.footer-inner__navigation-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 200px));
+  grid-auto-flow: dense;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  gap: 7px 50px;
+
+  @media #{$tablet-width} {
+    display: flex;
+    justify-content: flex-start;
+    gap: 13px;
+    margin: 0 -1px 0 0;
+  }
+
+  @media #{$desktop-width} {
+    justify-content: center;
+    gap: 19px;
+    margin: 2px 0 0;
+  }
+}
+
+.footer-inner__navigation-item {
+  font-size: 14px;
+  line-height: 1;
+
+  @media #{$desktop-width} {
+    font-size: 16px;
+  }
+}
+
+.footer-inner__navigation-item:first-child {
+  @media #{$tablet-only} {
+    margin-right: -3px;
+  }
+}
+
+.footer-inner__navigation-link {
+  @media #{$mobile-only} {
+    text-align: center;
+  }
+}
+
+.footer-inner__contacts {
+  display: none;
+
+  @media #{$desktop-width} {
+    display: flex;
+    justify-self: end;
+    margin: 3px 0 0;
+  }
+}
+
+.footer-inner__social {
+  margin: 0 0 4px;
+
+  @media #{$tablet-width} {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+
+  @media #{$desktop-width} {
+    margin: 10px 0 0;
+  }
+}
+
+.footer-inner__privacy-policy {
+  max-width: 800px;
+  text-align: center;
+
+  @media #{$tablet-width} {
+    grid-column: 1 / -1;
+  }
+}
+
+.footer-inner__privacy-policy-link {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1;
+  color: inherit;
+  text-decoration: none;
+  outline: 1px solid $transparent;
+  transition: outline 0.3s, color 0.3s, opacity 0.3s;
+
+  &:focus-visible {
+    outline: 1px solid $text-basic;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    outline: 1px solid $transparent;
+    color: $bg-primary;
+    opacity: 0.5;
+  }
+
+  &:active {
+    outline: 1px solid $transparent;
+    color: $button-active;
+    opacity: 1;
+  }
+}
+
+.footer-inner__privacy-policy-link--disabled {
+  outline: 1px solid $transparent;
+  opacity: 0.5;
+  color: $button-disabled;
+  pointer-events: none;
+  cursor: default;
+}

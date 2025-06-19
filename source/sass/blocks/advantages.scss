@@ -1,0 +1,239 @@
+.advantages {
+  padding: 20px $mobile-side;
+  color: $text-basic;
+
+  @media #{$tablet-width} {
+    padding: 40px $tablet-side;
+  }
+
+  @media #{$desktop-width} {
+    padding: 100px 0 185px;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 22px;
+  text-align: center;
+
+  @media #{$tablet-width} {
+    margin-bottom: 50px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 35px 0 10px;
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__title::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages__swiper-wrapper {
+  position: relative;
+}
+
+.advantages__swiper {
+  position: static;
+}
+
+.advantages__swiper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (width >= 625px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  @media #{$tablet-width} {
+    gap: 30px;
+  }
+
+  @media #{$desktop-width} {
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    flex-wrap: unset;
+    gap: unset;
+  }
+}
+
+.advantages__slide {
+  width: auto;
+  height: auto;
+}
+
+.advantages__item {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 42px;
+  justify-items: center;
+  gap: 20px;
+  min-width: 290px;
+  max-width: 380px;
+  height: 100%;
+  padding: 19px 9px;
+  text-align: center;
+  background-color: $text-light;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  @media (width >= 625px) {
+    max-width: 290px;
+  }
+
+  @media #{$tablet-width} {
+    grid-template-rows: 48px;
+    gap: 26px;
+    max-width: 324px;
+    padding: 29px 19px;
+  }
+
+  @media #{$desktop-width} {
+    grid-template-rows: 54px;
+    gap: 30px;
+    min-width: 380px;
+    max-width: 380px;
+    padding: 39px 19px;
+  }
+}
+
+.advantages__slide:last-child .advantages__item {
+  @media #{$tablet-width} {
+    padding: 29px 19px 35px;
+  }
+}
+
+.advantages__item--attainments br {
+  @media #{$mobile-only} {
+    display: none;
+  }
+
+  @media #{$tablet-only} {
+    display: none;
+  }
+}
+
+.advantages__item::before {
+  box-sizing: border-box;
+  grid-area: 1 / 1 / 2 / 2;
+  content: "";
+  width: 42px;
+  height: 42px;
+  border: 1px solid $bg-primary;
+
+  @media #{$tablet-width} {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media #{$desktop-width} {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.advantages__item::after {
+  grid-area: 1 / 1 / 2 / 2;
+  content: "";
+  width: 42px;
+  height: 42px;
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  background-color: $bg-primary;
+
+  @media #{$tablet-width} {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media #{$desktop-width} {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.advantages__item--safety::after {
+  mask-image: url("/__spritemap#sprite-safety-view");
+}
+
+.advantages__item--attainments::after {
+  mask-image: url("/__spritemap#sprite-crown-view");
+}
+
+.advantages__item--equipment::after {
+  mask-image: url("/__spritemap#sprite-boots-view");
+}
+
+.advantages__item--route::after {
+  mask-image: url("/__spritemap#sprite-path-view");
+}
+
+.advantages__item--nature::after {
+  mask-image: url("/__spritemap#sprite-lotus-view");
+}
+
+.advantages__wysiwyg h3 {
+  max-width: 248px;
+  margin: 0 auto 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+
+  @media #{$tablet-width} {
+    max-width: unset;
+    margin: 0 auto 14px;
+    font-size: 16px;
+  }
+
+  @media #{$desktop-width} {
+    margin: 0 auto 15px;
+    font-size: 18px;
+  }
+}
+
+.advantages__wysiwyg p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media #{$tablet-width} {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.advantages__wysiwyg p + p {
+  margin-top: 10px;
+}
+
+.advantages__button {
+  display: none;
+
+  @media #{$desktop-width} {
+    position: absolute;
+    bottom: -85px;
+    left: calc(50% + 21px);
+    transform: translateX(-50%);
+    display: inline-block;
+  }
+}
+
+.advantages__button--prev {
+  left: calc(50% - 21px);
+}
+
+.advantages__button--next {
+  transform: translateX(-50%) rotate(180deg);
+}

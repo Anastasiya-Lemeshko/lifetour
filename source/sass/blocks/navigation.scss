@@ -1,0 +1,128 @@
+.navigation {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media #{$desktop-width} {
+    justify-content: center;
+  }
+}
+
+.navigation--header {
+  background-color: $bg-primary;
+}
+
+.navigation--header .navigation__list {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+
+  @media #{$mobile-only} {
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+
+  @media #{$tablet-only} {
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    max-height: 50vh;
+  }
+
+  @media #{$tablet-width} {
+    gap: 18px;
+  }
+
+  @media #{$desktop-width} {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.navigation__link {
+  box-sizing: border-box;
+  display: block;
+  padding: 3px 5px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: border 0.3s, color 0.3s;
+  word-break: break-word;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $text-basic;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $text-basic;
+  }
+
+  &:active {
+    color: $bg-primary;
+    border-bottom: 1px solid $transparent;
+  }
+}
+
+.navigation--header .navigation__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media #{$tablet-width} {
+    font-size: 16px;
+  }
+
+  @media #{$desktop-width} {
+    font-weight: 400;
+    letter-spacing: initial;
+    text-transform: capitalize;
+  }
+
+  &:focus-visible {
+    border: 1px solid $text-light;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $text-light;
+  }
+
+  &:active {
+    color: $button-active;
+    border-bottom: 1px solid $transparent;
+  }
+}
+
+.navigation__link--disabled,
+.navigation--header .navigation__link--disabled {
+  color: $button-disabled;
+  border: 1px solid $transparent;
+  pointer-events: none;
+  cursor: default;
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid $transparent;
+  }
+
+  &:hover {
+    border: none;
+  }
+
+  &:active {
+    color: $button-disabled;
+  }
+}

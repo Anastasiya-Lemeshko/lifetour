@@ -1,4 +1,42 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+// Global
+@import "./common/variables";
+@import "./common/fonts";
+@import "./common/global";
+@import "./common/visually-hidden";
+
+// Blocks
+@import "./blocks/page";
+@import "./blocks/main-container";
+@import "./blocks/logo-image";
+@import "./blocks/button";
+@import "./blocks/input-text";
+@import "./blocks/social-link";
+@import "./blocks/social";
+@import "./blocks/title-width-shadow";
+@import "./blocks/stars";
+@import "./blocks/navigation";
+@import "./blocks/nav-contacts";
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/tour-card";
+@import "./blocks/tours";
+@import "./blocks/training";
+@import "./blocks/instructor-card";
+@import "./blocks/instructors";
+@import "./blocks/training-process";
+@import "./blocks/about";
+@import "./blocks/reviews-card";
+@import "./blocks/reviews";
+@import "./blocks/advantages";
+@import "./blocks/gallery";
+@import "./blocks/callback";
+@import "./blocks/contacts";
+@import "./blocks/map";
+@import "./blocks/footer-inner";
+@import "./blocks/footer";

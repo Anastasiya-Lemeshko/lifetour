@@ -1,0 +1,69 @@
+.nav-contacts {
+  --color-focus: #{$bg-primary};
+  --color-hover: #{$bg-primary};
+  --hover-opacity: 0.1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+
+  @media #{$tablet-width} {
+    font-size: 16px;
+  }
+
+  @media #{$desktop-width} {
+    font-size: 18px;
+  }
+}
+
+.nav-contacts--header {
+  --color-focus: #{$text-basic};
+  --color-hover: #{$text-light};
+  --hover-opacity: 0.5;
+}
+
+.nav-contacts__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s, opacity 0.3s;
+
+  &:focus-visible {
+    outline: none;
+    color: var(--color-focus);
+  }
+
+  &:hover {
+    color: var(--color-hover);
+    opacity: var(--hover-opacity);
+  }
+
+  &:active {
+    color: $button-active;
+    opacity: 1;
+  }
+}
+
+.nav-contacts__link--disabled {
+  color: $button-disabled;
+  opacity: 1;
+  pointer-events: none;
+  cursor: default;
+
+  &:focus-visible {
+    color: $button-disabled;
+  }
+
+  &:hover {
+    color: $button-disabled;
+    opacity: 1;
+  }
+
+  &:active {
+    color: $button-disabled;
+  }
+}

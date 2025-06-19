@@ -1,0 +1,21 @@
+.footer__container {
+  padding: 0 0 19px;
+
+  @media #{$tablet-width} {
+    padding: 0 0 39px;
+  }
+
+  @media #{$desktop-width} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 100px $desktop-side 94px;
+  }
+}
+
+.footer__contacts {
+  @media #{$desktop-width} {
+    max-width: 500px;
+    padding: 0;
+  }
+}
