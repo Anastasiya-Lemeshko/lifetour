@@ -21,28 +21,28 @@
 
 .page__clouds-with-mountains {
   background-image:
-    image-set(url("../../img/clouds/clouds-with-mountains-mobile@1x.webp") type("image/webp") 1x,
-    url("../../img/clouds/clouds-with-mountains-mobile@2x.webp") type("image/webp") 2x,
-    url("../../img/clouds/clouds-with-mountains-mobile@1x.jpg") type("image/jpeg") 1x,
-    url("../../img/clouds/clouds-with-mountains-mobile@2x.jpg") type("image/jpeg") 2x);
+    image-set(url("/img/clouds/clouds-with-mountains-mobile@1x.webp") type("image/webp") 1x,
+    url("/img/clouds/clouds-with-mountains-mobile@2x.webp") type("image/webp") 2x,
+    url("/img/clouds/clouds-with-mountains-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("/img/clouds/clouds-with-mountains-mobile@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
   background-position: top 10px right -11px;
 
   @media #{$tablet-width} {
     background-image:
-      image-set(url("../../img/clouds/clouds-with-mountains-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/clouds/clouds-with-mountains-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/clouds/clouds-with-mountains-tablet@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/clouds/clouds-with-mountains-tablet@2x.jpg") type("image/jpeg") 2x);
+      image-set(url("/img/clouds/clouds-with-mountains-tablet@1x.webp") type("image/webp") 1x,
+      url("/img/clouds/clouds-with-mountains-tablet@2x.webp") type("image/webp") 2x,
+      url("/img/clouds/clouds-with-mountains-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("/img/clouds/clouds-with-mountains-tablet@2x.jpg") type("image/jpeg") 2x);
     background-position: top -92px right -29px;
   }
 
   @media #{$desktop-width} {
     background-image:
-      image-set(url("../../img/clouds/clouds-with-mountains-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/clouds/clouds-with-mountains-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/clouds/clouds-with-mountains-desktop@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/clouds/clouds-with-mountains-desktop@2x.jpg") type("image/jpeg") 2x);
+      image-set(url("/img/clouds/clouds-with-mountains-desktop@1x.webp") type("image/webp") 1x,
+      url("/img/clouds/clouds-with-mountains-desktop@2x.webp") type("image/webp") 2x,
+      url("/img/clouds/clouds-with-mountains-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("/img/clouds/clouds-with-mountains-desktop@2x.jpg") type("image/jpeg") 2x);
     background-position: top -126px left calc(50% + 1142px);
   }
 
@@ -54,10 +54,10 @@
 .page__one-cloud {
   @media #{$tablet-width} {
     background-image:
-      image-set(url("../../img/clouds/one-cloud@1x.webp") type("image/webp") 1x,
-      url("../../img/clouds/one-cloud@2x.webp") type("image/webp") 2x,
-      url("../../img/clouds/one-cloud@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/clouds/one-cloud@2x.jpg") type("image/jpeg") 2x);
+      image-set(url("/img/clouds/one-cloud@1x.webp") type("image/webp") 1x,
+      url("/img/clouds/one-cloud@2x.webp") type("image/webp") 2x,
+      url("/img/clouds/one-cloud@1x.jpg") type("image/jpeg") 1x,
+      url("/img/clouds/one-cloud@2x.jpg") type("image/jpeg") 2x);
     background-repeat: no-repeat;
     background-position: bottom 181px left calc(50% + 338px);
   }
@@ -70,20 +70,20 @@
 .page__group-of-clouds {
   @media #{$tablet-width} {
     background-image:
-      image-set(url("../../img/clouds/group-of-clouds-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/clouds/group-of-clouds-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/clouds/group-of-clouds-tablet@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/clouds/group-of-clouds-tablet@2x.jpg") type("image/jpeg") 2x);
+      image-set(url("/img/clouds/group-of-clouds-tablet@1x.webp") type("image/webp") 1x,
+      url("/img/clouds/group-of-clouds-tablet@2x.webp") type("image/webp") 2x,
+      url("/img/clouds/group-of-clouds-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("/img/clouds/group-of-clouds-tablet@2x.jpg") type("image/jpeg") 2x);
     background-position: bottom 103px left 50%;
     background-repeat: no-repeat;
   }
 
   @media #{$desktop-width} {
     background-image:
-      image-set(url("../../img/clouds/group-of-clouds-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/clouds/group-of-clouds-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/clouds/group-of-clouds-desktop@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/clouds/group-of-clouds-desktop@2x.jpg") type("image/jpeg") 2x);
+      image-set(url("/img/clouds/group-of-clouds-desktop@1x.webp") type("image/webp") 1x,
+      url("/img/clouds/group-of-clouds-desktop@2x.webp") type("image/webp") 2x,
+      url("/img/clouds/group-of-clouds-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("/img/clouds/group-of-clouds-desktop@2x.jpg") type("image/jpeg") 2x);
     background-position: top 319px left calc(50% + 13px);
   }
 }
