@@ -34,7 +34,7 @@
 
 ## 📖 Библиотеки
 
-- [Swiper.js](https://swiperjs.com/)
+- [Swiper.js](https://swiperjs.com/).
 
 
 ## 🛠 Технологии и инструменты
@@ -53,7 +53,7 @@
 
 ## 📌 Ссылка на проект
 
-https://anastasiya-lemeshko.github.io/lifetour/
+https://anastasiya-lemeshko.github.io/accelerator-project-2/
 
 
 ## 🚀 Установка и запуск:
